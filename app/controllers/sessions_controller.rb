@@ -19,7 +19,6 @@ class SessionsController < ApplicationController
     flash[:success] = 'ログアウトしました。'
     redirect_to root_url
   end
-
   private
 
   def login(email, password)

@@ -14,11 +14,4 @@ class RelationshipsController < ApplicationController
     flash[:success] = 'ユーザのフォローを解除しました。'
     redirect_to user
   end
-  
-  def counts(user)
-    @count_microposts = user.microposts.count
-    @count_followings = user.followings.count
-    @count_followers = user.followers.count
-  end
-
 end
